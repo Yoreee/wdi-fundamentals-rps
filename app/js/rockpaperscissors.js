@@ -23,16 +23,26 @@ function randomPlay() {
 
 function getPlayerMove(move) {
     // Write an expression that operates on a variable called `move`
+    var something = move;
+    if (move != null;) {
+        return something;
+    } else {
+        return getInput();
+    }
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `getInput()`.
-    return /* Your Expression */;
 }
 
 function getComputerMove(move) {
     // Write an expression that operates on a variable called `move`
+    var something = move;
+    if (move != null) {
+        return something;
+    } else {
+        return randomPlay();
+    }
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
-    return /* Your Expression */;
 }
 
 function getWinner(playerMove,computerMove) {
@@ -52,4 +62,5 @@ function playToFive() {
     /* YOUR CODE HERE */
     return [playerWins, computerWins];
 }
+
 
